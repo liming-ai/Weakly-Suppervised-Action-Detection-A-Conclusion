@@ -14,7 +14,7 @@ Please note that only **accepted** papers (for reliability) by **conferences** (
   - [ActivityNet1.2](#activitynet12)
   - [ActivityNet1.3](#activitynet13)
 - [Paper List](#paper-list)
-- [Quick preview](#preview)
+- [Quick Preview](#quick-preview)
 
 ##
 
