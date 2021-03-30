@@ -245,7 +245,11 @@ Based on AutoLoc, the main contribution is improving the proposal scoring, avoid
 3. using triplet loss to push them away
 ![image](https://user-images.githubusercontent.com/73068772/112928495-4d45eb00-9149-11eb-924e-f00fcdd8fd46.png)
 ### UM AAAI'21
-![image](https://user-images.githubusercontent.com/73068772/112928547-62227e80-9149-11eb-81d0-5bc31058dcbb.png)
+---
 1. Using feature's norm as attention
 2. top-k norm are regarded as action, bottom-k are background
 3. push action and background away
+---
+
+![image](https://user-images.githubusercontent.com/73068772/112928547-62227e80-9149-11eb-81d0-5bc31058dcbb.png)
+
