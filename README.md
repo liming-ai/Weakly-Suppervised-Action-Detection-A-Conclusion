@@ -166,48 +166,86 @@ Temporal Action Localization | [`[pdf]`](https://openaccess.thecvf.com/content_C
 36. **[TS-PCA]** | **CVPR'21** | The Blessings of Unlabeled Background in Untrimmed Videos | [`[pdf]`](https://arxiv.org/pdf/2103.13183.pdf)
 
 ## Quick Preview
-### STPN CVPR'18
+### STPN | CVPR'18
+1. Using attention pooled feature to classify videos
+2. Propose a sparse loss to force attention value be 0 or 1
 ![image](https://user-images.githubusercontent.com/73068772/112927157-21296a80-9147-11eb-80a8-a43ce82d944b.png)
 ![image](https://user-images.githubusercontent.com/73068772/112927135-166ed580-9147-11eb-9c8a-b86fcb3c2c78.png)
 ### AutoLoc ECCV'18
+1. The proposal generation is same as full-supervised methods
+2. Propose a OIC loss to compute score of each proposal, widely used in later works
 ![image](https://user-images.githubusercontent.com/73068772/112927220-40c09300-9147-11eb-8dcd-451754c1ce79.png)
 ### W-TALC ECCV'18
+1. First work use top-k mean to classify videos
+2. Using ranking hinge loss to separate feature and background
 ![image](https://user-images.githubusercontent.com/73068772/112927309-58981700-9147-11eb-9c36-85710f4e574b.png)
 ### MAAN ICLR'19
+1. Improve the STPN method, change the way of attention pooled
 ![image](https://user-images.githubusercontent.com/73068772/112927435-8da46980-9147-11eb-817a-1fc5cbc46ae3.png)
 ### CMCS CVPR'19
+1. Proposal 2 problem, one for avoiding most salient region, another for separating action and context
+2. For most salient region, propose multi-branch cas, adding KL divergence to force they are different
+3. Regard context clips as hard-negative samples, send them to training set again
 ![image](https://user-images.githubusercontent.com/73068772/112927444-9137f080-9147-11eb-8e5c-2dd6e25b38ba.png)
 ### CleanNet ICCV'19
+Based on AutoLoc, the main contribution is improving the proposal scoring, avoiding the effect casued by noise
 ![image](https://user-images.githubusercontent.com/73068772/112927567-cd6b5100-9147-11eb-9c57-885cc1ee8001.png)
 ### 3C-Net ICCV'19
+1. Classification loss for video's class
+2. Center loss used to bring the features of each class closer to their cluster center
+3. Class counting loss for stable training, i.e. the more categories a video has, the higher its classification error
 ![image](https://user-images.githubusercontent.com/73068772/112927628-e3791180-9147-11eb-9014-ab7477d6aa2f.png)
 ### TSM ICCV'19
+1. Regard weakly-supervised action detection task as maximal circulant path discovery in a graph
 ![image](https://user-images.githubusercontent.com/73068772/112927685-f7247800-9147-11eb-8645-74266d09cfcb.png)
 ### BM UCCV'19
+1. First work to model background via attention
+2. First work using self-guide loss(classifier to attention)
 ![image](https://user-images.githubusercontent.com/73068772/112927725-07d4ee00-9148-11eb-876b-54e990e7bebf.png)
 ### Bas-Net AAAI'20
+1. two-branch, corresponding different background label
 ![image](https://user-images.githubusercontent.com/73068772/112927776-1ae7be00-9148-11eb-95ec-717087496791.png)
 ### RPN AAAI'20
+1. CAS is constructed via the dataset and GCN
+2. Similar with prototype learning
 ![image](https://user-images.githubusercontent.com/73068772/112927906-508ca700-9148-11eb-9725-8094be5943fe.png)
 ### ActionBytes CVPR'2020
+1. Learning from short videos, but test in localizing actions for long videos
 ![image](https://user-images.githubusercontent.com/73068772/112927997-7619b080-9148-11eb-8c46-7eb6bce51588.png)
 ### DGAM CVPR'20
+1. Model the probability of whether each clip is an action as a hidden variable, using VAE to solve it
 ![image](https://user-images.githubusercontent.com/73068772/112928059-8e89cb00-9148-11eb-80e4-10f00b975ca0.png)
 ### A2CL-PT ECCV'20
+1. Two triplet loss, one for push foreground and background away, another for separating different actions
+2. Cutout the most salient region
 ![image](https://user-images.githubusercontent.com/73068772/112928122-a5c8b880-9148-11eb-841f-ad8ca93d3612.png)
 ### SF-Net ECCV'20
+1. A new task, first localization a single clip, then using it to localization other clip
 ![image](https://user-images.githubusercontent.com/73068772/112928176-bbd67900-9148-11eb-92ea-adfc07ef8233.png)
 ### TSCN ECCV'20
+1. Combining the attention from RGB stream and FLOW stream to eliminate false positive clips
 ![image](https://user-images.githubusercontent.com/73068772/112928226-cd1f8580-9148-11eb-8a60-924b28cb71e8.png)
 ### EM-MIL ECCV'20
+1. Model the probability of whether each clip is an action as a hidden variable, using EM algorithm to solve it
 ![image](https://user-images.githubusercontent.com/73068772/112928266-df012880-9148-11eb-98f9-eb3e5d47cf8f.png)
 ### ACM-BANet MM'20
+1. Based on BasNet, randomly choose the raw attention or the most high attention for BasNet
+2. propose a self-guided top-k mean for classification
 ![image](https://user-images.githubusercontent.com/73068772/112928309-f6401600-9148-11eb-93d9-afbc88d96781.png)
 ### HAM-Net AAAI'21
+1. multi-branch for classification, the bacckground class is according to its branch
 ![image](https://user-images.githubusercontent.com/73068772/112928345-09eb7c80-9149-11eb-86ea-ec93117511f0.png)
 ### ASCNet AAAI'21
+1. 2 branches, one for separating foreground and background, another for separating action and context
+2. Add a separate context class for each category to separate action and context
 ![image](https://user-images.githubusercontent.com/73068772/112928429-330c0d00-9149-11eb-8fba-33f0c8b11a5f.png)
 ### Action-Context Seperate AAAI'21
+1. explicitly separate feature space into action and context, like octave conv
+2. then use rgb attention and flow action to define action feature, context feature, background feature
+3. using triplet loss to push them away
 ![image](https://user-images.githubusercontent.com/73068772/112928495-4d45eb00-9149-11eb-924e-f00fcdd8fd46.png)
 ### UM AAAI'21
 ![image](https://user-images.githubusercontent.com/73068772/112928547-62227e80-9149-11eb-81d0-5bc31058dcbb.png)
+1. Using feature's norm as attention
+2. top-k norm are regarded as action, bottom-k are background
+3. push action and background away
