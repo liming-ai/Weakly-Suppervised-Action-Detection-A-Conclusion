@@ -69,7 +69,7 @@ In addition, links to the implementations are attached with their framework spec
 | 32 | 2021 | AAAI  | Liu et al.             |    -    |    -    |  50.8   |  41.7   |  29.6   |  20.1   |  10.7   |    -    |        |
 | 33 | 2021 | AAAI  | ACSNet                 |    -    |    -    |  51.4   |  42.7   |  32.4   |  22.0   |  11.7   |    -    |        |
 | 34 | 2021 | AAAI  | HAM-Net                |  65.9   |  59.6   |  52.2   |  43.1   |  32.6   |  21.9   |  12.5   |  41.1   |[`[o-pytorch]`](https://github.com/asrafulashiq/hamnet)|
-| 35 | 2021 | AAAI  | Lee et al.             |  67.5   |**61.2** |  52.3   |**43.4** |  33.7   |  22.9   |  12.1   |  41.9   |[`[o-pytorch]`](https://github.com/Pilhyeon/WTAL-Uncertainty-Modeling)|
+| 35 | 2021 | AAAI  | UM             |  67.5   |**61.2** |  52.3   |**43.4** |  33.7   |  22.9   |  12.1   |  41.9   |[`[o-pytorch]`](https://github.com/Pilhyeon/WTAL-Uncertainty-Modeling)|
 | 36 | 2021 | CVPR  | TS-PCA+UM                 |  67.6   |  61.1   |**53.4** |**43.4** |**34.3** |**24.7** |  13.7   |**42.6** |        |
 | 37 | 2021 | CVPR  | CoLA                 |  66.2   |  59.5   | 51.5 | 41.9 | 32.2 | 22.0 |  13.7   | 40.9 |        |
 
@@ -102,7 +102,7 @@ In addition, links to the implementations are attached with their framework spec
 | 32 | 2021 | AAAI  | Liu et al.             |  39.2   |  25.6   | **6.8** |  25.5   |        |
 | 33 | 2021 | AAAI  | ACSNet                 |  40.1   |**26.1** | **6.8** | 26.0 |        |
 | 34 | 2021 | AAAI  | HAM-Net                |  41.0   |  24.8   |   5.3   |  25.1   |[`[o-pytorch]`](https://github.com/asrafulashiq/hamnet)|
-| 35 | 2021 | AAAI  | Lee et al.             | 41.2 |  25.6   |   6.0   |  25.9   |[`[o-pytorch]`](https://github.com/Pilhyeon/WTAL-Uncertainty-Modeling)|
+| 35 | 2021 | AAAI  | UM             | 41.2 |  25.6   |   6.0   |  25.9   |[`[o-pytorch]`](https://github.com/Pilhyeon/WTAL-Uncertainty-Modeling)|
 | 36 | 2021 | CVPR  | CoLA                 |  **42.7**   |  25.7   |   5.8   |  **26.1**   |        |
 
 ##
@@ -126,7 +126,7 @@ In addition, links to the implementations are attached with their framework spec
 | 30 | 2020 | MM    | ACM-BANet              |**37.6** |**24.7** | **6.5** |**24.4** |        |
 | 32 | 2021 | AAAI  | Liu et al.             |  35.1   |  23.7   |   5.6   |  23.2   |        |
 | 33 | 2021 | AAAI  | ACSNet                 |  36.3   |  24.2   |   5.8   |  23.9   |        |
-| 35 | 2021 | AAAI  | Lee et al.             |  37.0   |  23.9   |   5.7   |  23.7   |[`[o-pytorch]`](https://github.com/Pilhyeon/WTAL-Uncertainty-Modeling)|
+| 35 | 2021 | AAAI  | UM             |  37.0   |  23.9   |   5.7   |  23.7   |[`[o-pytorch]`](https://github.com/Pilhyeon/WTAL-Uncertainty-Modeling)|
 | 36 | 2021 | CVPR  | TS-PCA                 |  37.4   |  23.5   |   5.9   |  23.7   |        |
 
 
@@ -168,7 +168,7 @@ Temporal Action Localization | [`[pdf]`](https://openaccess.thecvf.com/content_C
 32. **[Liu et al.]** | **AAAI'21** | Weakly Supervised Temporal Action Localization Through Learning Explicit Subspaces for Action and Context | [`[pdf]`](http://gr.xjtu.edu.cn/documents/1809645/1810998/AAAI2021b.pdf/5482f149-3858-d059-f71e-e439dcc8edb2?t=1608017846044)
 33. **[ACSNet]** | **AAAI'21** | ACSNet: Action-Context Separation Network for Weakly Supervised Temporal Action Localization | [`[pdf]`](http://gr.xjtu.edu.cn/documents/1809645/1810998/AAAI2021a.pdf/651076be-cec7-2f6a-be3c-8da8c03ef12c?t=1608017799289)
 34. **[HAM-Net]** | **AAAI'21** | A Hybrid Attention Mechanism for Weakly-Supervised Temporal Action Localization | [`[pdf]`](https://arxiv.org/pdf/2101.00545.pdf) | [`[o-pytorch]`](https://github.com/asrafulashiq/hamnet)
-35. **[Lee et al.]** | **AAAI'21** | Weakly-supervised Temporal Action Localization by Uncertainty Modeling | [`[pdf]`](https://arxiv.org/pdf/2006.07006.pdf) | [`[o-pytorch]`](https://github.com/Pilhyeon/WTAL-Uncertainty-Modeling)
+35. **[UM]** | **AAAI'21** | Weakly-supervised Temporal Action Localization by Uncertainty Modeling | [`[pdf]`](https://arxiv.org/pdf/2006.07006.pdf) | [`[o-pytorch]`](https://github.com/Pilhyeon/WTAL-Uncertainty-Modeling)
 36. **[TS-PCA]** | **CVPR'21** | The Blessings of Unlabeled Background in Untrimmed Videos | [`[pdf]`](https://arxiv.org/pdf/2103.13183.pdf)
 37. **[CoLA]** | **CVPR'21** | CoLA: Weakly-Supervised Temporal Action Localization with Snippet Contrastive Learning| [`[pdf]`]https://arxiv.org/pdf/2103.16392
 
