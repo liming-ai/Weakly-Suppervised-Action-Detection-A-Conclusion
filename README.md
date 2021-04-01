@@ -4,7 +4,7 @@ A curated publication list on weakly-supervised temporal action localization.
 This repository was built to facilitate navigating the mainstream on weakly-supervised temporal action localization.  
 Please note that only **accepted** papers (for reliability) by **conferences** (for brevity) are contained here.
 
-*Last updated: 2021/03/26*
+*Last updated: 2021/04/01*
 
 ##
 
@@ -68,7 +68,9 @@ In addition, links to the implementations are attached with their framework spec
 | 33 | 2021 | AAAI  | ACSNet                 |    -    |    -    |  51.4   |  42.7   |  32.4   |  22.0   |  11.7   |    -    |        |
 | 34 | 2021 | AAAI  | HAM-Net                |  65.9   |  59.6   |  52.2   |  43.1   |  32.6   |  21.9   |  12.5   |  41.1   |[`[o-pytorch]`](https://github.com/asrafulashiq/hamnet)|
 | 35 | 2021 | AAAI  | Lee et al.             |  67.5   |**61.2** |  52.3   |**43.4** |  33.7   |  22.9   |  12.1   |  41.9   |[`[o-pytorch]`](https://github.com/Pilhyeon/WTAL-Uncertainty-Modeling)|
-| 36 | 2021 | CVPR  | TS-PCA                 |  67.6   |  61.1   |**53.4** |**43.4** |**34.3** |**24.7** |  13.7   |**42.6** |        |
+| 36 | 2021 | CVPR  | TS-PCA+UM                 |  67.6   |  61.1   |**53.4** |**43.4** |**34.3** |**24.7** |  13.7   |**42.6** |        |
+| 37 | 2021 | CVPR  | CoLA                 |  66.2   |  59.5   | 51.5 | 41.9 | 32.2 | 22.0 |  13.7   | 40.9 |        |
+
 
 ##
 
@@ -96,9 +98,10 @@ In addition, links to the implementations are attached with their framework spec
 | 29 | 2020 | ECCV  | TSCN                   |  37.6   |  23.7   |   5.7   |  23.6   |        |
 | 31 | 2021 | WACV  | RefineLoc              |  38.7   |  22.6   |   5.5   |  23.2   |[`[o-pytorch]`](https://github.com/HumamAlwassel/RefineLoc)|
 | 32 | 2021 | AAAI  | Liu et al.             |  39.2   |  25.6   | **6.8** |  25.5   |        |
-| 33 | 2021 | AAAI  | ACSNet                 |  40.1   |**26.1** | **6.8** |**26.0** |        |
+| 33 | 2021 | AAAI  | ACSNet                 |  40.1   |**26.1** | **6.8** | 26.0 |        |
 | 34 | 2021 | AAAI  | HAM-Net                |  41.0   |  24.8   |   5.3   |  25.1   |[`[o-pytorch]`](https://github.com/asrafulashiq/hamnet)|
-| 35 | 2021 | AAAI  | Lee et al.             |**41.2** |  25.6   |   6.0   |  25.9   |[`[o-pytorch]`](https://github.com/Pilhyeon/WTAL-Uncertainty-Modeling)|
+| 35 | 2021 | AAAI  | Lee et al.             | 41.2 |  25.6   |   6.0   |  25.9   |[`[o-pytorch]`](https://github.com/Pilhyeon/WTAL-Uncertainty-Modeling)|
+| 36 | 2021 | CVPR  | CoLA                 |  **42.7**   |  25.7   |   5.8   |  **26.1**   |        |
 
 ##
 
@@ -123,6 +126,7 @@ In addition, links to the implementations are attached with their framework spec
 | 33 | 2021 | AAAI  | ACSNet                 |  36.3   |  24.2   |   5.8   |  23.9   |        |
 | 35 | 2021 | AAAI  | Lee et al.             |  37.0   |  23.9   |   5.7   |  23.7   |[`[o-pytorch]`](https://github.com/Pilhyeon/WTAL-Uncertainty-Modeling)|
 | 36 | 2021 | CVPR  | TS-PCA                 |  37.4   |  23.5   |   5.9   |  23.7   |        |
+
 
 ##
 
@@ -164,6 +168,7 @@ Temporal Action Localization | [`[pdf]`](https://openaccess.thecvf.com/content_C
 34. **[HAM-Net]** | **AAAI'21** | A Hybrid Attention Mechanism for Weakly-Supervised Temporal Action Localization | [`[pdf]`](https://arxiv.org/pdf/2101.00545.pdf) | [`[o-pytorch]`](https://github.com/asrafulashiq/hamnet)
 35. **[Lee et al.]** | **AAAI'21** | Weakly-supervised Temporal Action Localization by Uncertainty Modeling | [`[pdf]`](https://arxiv.org/pdf/2006.07006.pdf) | [`[o-pytorch]`](https://github.com/Pilhyeon/WTAL-Uncertainty-Modeling)
 36. **[TS-PCA]** | **CVPR'21** | The Blessings of Unlabeled Background in Untrimmed Videos | [`[pdf]`](https://arxiv.org/pdf/2103.13183.pdf)
+37. **[CoLA]** | **CVPR'21** | CoLA: Weakly-Supervised Temporal Action Localization with Snippet Contrastive Learning| [`[pdf]`]https://arxiv.org/pdf/2103.16392
 
 ## Quick Preview
 ### STPN | CVPR'18
@@ -270,6 +275,18 @@ Based on AutoLoc, the main contribution is improving the proposal scoring, avoid
 2. top-k norm are regarded as action, bottom-k are background
 3. push action and background away
 ---
-
 ![image](https://user-images.githubusercontent.com/73068772/112928547-62227e80-9149-11eb-81d0-5bc31058dcbb.png)
+### TS-PCA CVPR'21
+1. regard context info as confounder
+2. using projection vectors of features to substitute confounder
+3. adding them to raw cas to refine the value of cas
+![image](https://user-images.githubusercontent.com/73068772/113235448-a04ca900-92d5-11eb-9842-17a3cc83e0f5.png)
 
+### CoLA CVPR'21
+1. define the concept of hard action, easy action, hard background and easy background
+2. for each hard action, the positive sample is from easy action, yet negative sample is from easy background
+3. for each hard bg, the positive sample is from easy bg, the negative sample is from easy action
+![image](https://user-images.githubusercontent.com/73068772/113235013-f53bef80-92d4-11eb-9742-d24159d64b2d.png)
+![image](https://user-images.githubusercontent.com/73068772/113235044-fe2cc100-92d4-11eb-891c-071e0d1aa254.png)
+
+3. for each hard bg, the positive sample is from easy bg, the negative sample is from easy action
