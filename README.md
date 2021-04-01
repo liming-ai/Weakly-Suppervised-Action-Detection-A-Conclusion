@@ -1,5 +1,7 @@
 # Weakly-supervised Temporal Action Localization: A Conclusion
-A curated publication list on weakly-supervised temporal action localization.
+A curated publication list on weakly-supervised temporal action localization. this project is based on [Pilhyeon
+/
+Awesome-Weakly-Supervised-Temporal-Action-Localization](https://github.com/Pilhyeon/Awesome-Weakly-Supervised-Temporal-Action-Localization)
 
 This repository was built to facilitate navigating the mainstream on weakly-supervised temporal action localization.  
 Please note that only **accepted** papers (for reliability) by **conferences** (for brevity) are contained here.
@@ -288,5 +290,3 @@ Based on AutoLoc, the main contribution is improving the proposal scoring, avoid
 3. for each hard bg, the positive sample is from easy bg, the negative sample is from easy action
 ![image](https://user-images.githubusercontent.com/73068772/113235013-f53bef80-92d4-11eb-9742-d24159d64b2d.png)
 ![image](https://user-images.githubusercontent.com/73068772/113235044-fe2cc100-92d4-11eb-891c-071e0d1aa254.png)
-
-3. for each hard bg, the positive sample is from easy bg, the negative sample is from easy action
