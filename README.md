@@ -170,7 +170,7 @@ Temporal Action Localization | [`[pdf]`](https://openaccess.thecvf.com/content_C
 34. **[HAM-Net]** | **AAAI'21** | A Hybrid Attention Mechanism for Weakly-Supervised Temporal Action Localization | [`[pdf]`](https://arxiv.org/pdf/2101.00545.pdf) | [`[o-pytorch]`](https://github.com/asrafulashiq/hamnet)
 35. **[UM]** | **AAAI'21** | Weakly-supervised Temporal Action Localization by Uncertainty Modeling | [`[pdf]`](https://arxiv.org/pdf/2006.07006.pdf) | [`[o-pytorch]`](https://github.com/Pilhyeon/WTAL-Uncertainty-Modeling)
 36. **[TS-PCA]** | **CVPR'21** | The Blessings of Unlabeled Background in Untrimmed Videos | [`[pdf]`](https://arxiv.org/pdf/2103.13183.pdf)
-37. **[CoLA]** | **CVPR'21** | CoLA: Weakly-Supervised Temporal Action Localization with Snippet Contrastive Learning| [`[pdf]`]https://arxiv.org/pdf/2103.16392
+37. **[CoLA]** | **CVPR'21** | CoLA: Weakly-Supervised Temporal Action Localization with Snippet Contrastive Learning| [`[pdf]`](https://arxiv.org/pdf/2103.16392)
 
 ## Quick Preview
 ### STPN | CVPR'18
